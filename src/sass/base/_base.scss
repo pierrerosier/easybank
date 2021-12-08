@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $Public-Sans;
+    font-size: 18px;
+}
+
+h1, h2, h3 {
+    color: $Martinique;
+}
+
+p {
+    color: $Manatee;
+}
+
+h1 {
+    font-size: 40px;
+
+    @media screen and(max-width: 991px) {
+        font-size: 48px;
+    }
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+p {
+    font-size: 13px;
+}

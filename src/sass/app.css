@@ -1,0 +1,346 @@
+@charset "UTF-8";
+/* Theme Name: Easybank
+ * Author: Pierre Rosier
+ * Description: Thème créé pour un exercice Frontend Mentor
+ * Version: 1.0.0
+ */
+@import '/node_modules/bootstrap/dist/css/bootstrap.css';
+@import '/node_modules/hamburgers/dist/hamburgers.css';
+/*
+*Colors
+*
+    **Primary
+    */
+/**Neutral
+*/
+/*
+*Colors
+*
+    **Font
+    */
+/**Font Weigth
+*/
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Public Sans", sans-serif;
+  font-size: 18px;
+}
+
+h1, h2, h3 {
+  color: #2d314d;
+}
+
+p {
+  color: #9698A6;
+}
+
+h1 {
+  font-size: 40px;
+}
+@media screen and (max-width: 991px) {
+  h1 {
+    font-size: 48px;
+  }
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+p {
+  font-size: 13px;
+}
+
+/*
+*Spartan
+*/
+/*
+**Bold
+*/
+@font-face {
+  font-family: "Public Sans";
+  src: url("../../fonts/PublicSans-Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+.navbar {
+  padding: 18px 0;
+}
+@media screen and (max-width: 375px) {
+  .navbar .container-fluid .logo {
+    width: 278px;
+    height: auto;
+  }
+}
+.navbar .container-fluid .navbar-collapse {
+  justify-content: center;
+}
+.navbar .container-fluid .navbar-nav .nav-item {
+  font-size: 0.55555rem;
+  color: #9698A6;
+}
+.navbar .container-fluid .navbar-nav .nav-item .nav-link {
+  padding: 0 16px;
+}
+@media screen and (max-width: 991px) {
+  .navbar .container-fluid .navbar-nav .nav-item {
+    text-align: center;
+  }
+}
+
+.btn-invite {
+  width: 163px !important;
+  height: 43px !important;
+  border-radius: 50px !important;
+  background: linear-gradient(90deg, #31d35c 0%, #2BB7DA 100%) !important;
+  font-size: 0.55555rem !important;
+  color: #FFFFFF;
+}
+@media screen and (max-width: 991px) {
+  .btn-invite {
+    display: none;
+  }
+}
+
+.nextGen {
+  padding: 0 !important;
+  background-color: #FAFAFA;
+  background-image: url("/src/images/bg-intro-desktop.svg");
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position-x: 47vw;
+  background-position-y: -18vh;
+}
+.nextGen__text {
+  padding-top: 175px;
+  padding-bottom: 170px;
+}
+.nextGen__text p {
+  margin: 30px 0;
+}
+@media screen and (max-width: 991px) {
+  .nextGen__text .btn-invite {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 991px) {
+  .nextGen__text {
+    margin: 0 auto;
+    order: 2;
+  }
+}
+.nextGen__img img {
+  position: absolute;
+  left: calc(100% - 720px);
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 720px;
+  -o-object-position: 8vw -7vh;
+     object-position: 8vw -7vh;
+}
+@media screen and (max-width: 991px) {
+  .nextGen__img img {
+    position: relative;
+    -o-object-position: 0 -7vh;
+       object-position: 0 -7vh;
+  }
+}
+@media screen and (max-width: 991px) {
+  .nextGen__img {
+    position: relative;
+    margin: 0 auto;
+    height: 607px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .nextGen {
+    text-align: center;
+    background-size: 110%;
+    background-position-x: 13vw;
+    background-position-y: -17.5vh;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nextGen {
+    background-size: 170%;
+    background-position-x: -17vw;
+    background-position-y: -17.5vh;
+  }
+}
+
+.choice {
+  background-color: #F3F4F6;
+}
+.choice__text {
+  padding-top: 110px;
+}
+@media screen and (max-width: 991px) {
+  .choice__text h2 {
+    margin: 0 auto;
+  }
+}
+.choice__text p {
+  margin: 40px 0 75px;
+}
+@media screen and (max-width: 991px) {
+  .choice__text p {
+    margin: 40px auto 75px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 991px) {
+  .choice__text {
+    margin: 0 auto;
+  }
+}
+.choice__arg img {
+  margin-bottom: 38px;
+  width: 72px;
+  height: auto;
+}
+@media screen and (max-width: 991px) {
+  .choice__arg img {
+    margin: 0 auto 38px;
+  }
+}
+.choice__arg h3 {
+  margin-bottom: 37px;
+}
+@media screen and (max-width: 991px) {
+  .choice__arg h3 {
+    margin: 0 auto 37px;
+  }
+}
+.choice__arg p {
+  margin-bottom: 108px;
+}
+@media screen and (max-width: 991px) {
+  .choice__arg p {
+    margin: 0 auto 108px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 991px) {
+  .choice__arg {
+    margin: 0 auto;
+  }
+}
+
+.article {
+  background-color: #FAFAFA;
+}
+.article .row-article {
+  padding-bottom: 78px;
+}
+.article__title {
+  margin: 97px 0 53px;
+}
+.article__block {
+  background-color: #FFFFFF;
+  border-radius: 5px;
+}
+.article__block__img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 100%;
+}
+.article__block__label, .article__block h4, .article__block p {
+  padding: 0 24px;
+}
+.article__block__label {
+  margin: 25px 0 0;
+  font-size: 8px;
+}
+.article__block h4 {
+  margin: 29px 0;
+}
+.article__block p {
+  padding-bottom: 27px;
+}
+@media screen and (max-width: 991px) {
+  .article__block {
+    margin-bottom: 22px;
+  }
+}
+
+.footer {
+  background-color: #2d314d;
+}
+.footer .row {
+  padding: 47px 0;
+}
+@media screen and (max-width: 991px) {
+  .footer__socials__logo {
+    display: block;
+    margin: 0 auto;
+  }
+}
+.footer__socials__logos {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+@media screen and (max-width: 991px) {
+  .footer__socials__logos img:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .footer__socials__logos {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 991px) {
+  .footer__socials {
+    margin: 14px 0 34px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .footer__1rstMenu ul, .footer__2ndMenu ul {
+    padding: 0;
+  }
+}
+.footer__1rstMenu ul li, .footer__2ndMenu ul li {
+  font-size: 12px;
+}
+.footer__1rstMenu ul li:not(:last-child), .footer__2ndMenu ul li:not(:last-child) {
+  margin-bottom: 9px;
+}
+.footer__1rstMenu ul li a, .footer__2ndMenu ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+@media screen and (max-width: 991px) {
+  .footer__1rstMenu, .footer__2ndMenu {
+    text-align: center;
+  }
+}
+.footer__btn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.footer__btn p {
+  margin-top: 24px;
+  text-align: right;
+}
+@media screen and (max-width: 991px) {
+  .footer__btn {
+    margin: 23px 0 36px;
+    align-items: center;
+  }
+}/*# sourceMappingURL=app.css.map */

@@ -1,0 +1,20 @@
+/* Theme Name: Easybank
+ * Author: Pierre Rosier
+ * Description: Thème créé pour un exercice Frontend Mentor
+ * Version: 1.0.0
+ */
+
+ @import '/node_modules/bootstrap/dist/css/bootstrap.css';
+ @import '/node_modules/hamburgers/dist/hamburgers.css';
+
+ @import 'variables';
+
+ @import 'base/base';
+ @import 'base/fonts';
+
+ @import 'modules/nav';
+ @import 'modules/button';
+ @import 'modules/nextGen';
+ @import 'modules/choice';
+ @import 'modules/articles';
+ @import 'modules/footer';

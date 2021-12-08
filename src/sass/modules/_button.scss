@@ -1,0 +1,12 @@
+.btn-invite {
+    width: 163px!important;
+    height: 43px!important;
+    border-radius: 50px!important;
+    background: linear-gradient(90deg, $Emerald 0%, $Scooter 100%)!important;
+    font-size: .55555rem!important;
+    color: $White;
+
+            @media screen and(max-width: 991px) {
+                display: none;
+            }
+}

@@ -1,0 +1,68 @@
+.nextGen {
+    padding: 0!important;
+    background-color: $Alabaster;
+    background-image: url('/src/images/bg-intro-desktop.svg');
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position-x: 47vw;
+    background-position-y: -18vh;
+
+    &__text {
+        padding-top: 175px;
+        padding-bottom: 170px;
+
+        p {
+            margin: 30px 0;
+        }
+
+        .btn-invite {
+            
+            @media screen and(max-width: 991px) {
+                margin: 0 auto;
+            }
+        }
+
+        @media screen and(max-width: 991px) {
+            margin: 0 auto;
+            //width: 60%;
+            order: 2;
+        }
+
+    }
+
+    &__img {
+        
+        img {
+            position: absolute;
+            left: calc(100% - 720px);
+            object-fit: cover;
+            max-width: 720px;
+            object-position: 8vw -7vh;
+
+            @media screen and(max-width: 991px) {
+                position: relative;
+                object-position: 0 -7vh;
+            }
+        }
+
+        @media screen and(max-width: 991px) {
+            position: relative;
+            margin: 0 auto;
+            height: 607px;
+        }
+    }
+
+    @media screen and(max-width: 991px){
+        text-align: center;
+        background-size: 110%;
+        background-position-x: 13vw;
+        background-position-y: -17.5vh;
+    }
+
+    @media screen and(max-width: 768px) {
+        background-size: 170%;
+        background-position-x: -17vw;
+        background-position-y: -17.5vh;
+    }
+
+}

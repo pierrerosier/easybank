@@ -1,0 +1,40 @@
+.navbar {
+    padding: 18px 0;
+
+    .container-fluid {
+
+        .logo {
+
+            @media screen and(max-width: 375px) {
+                width: 278px;
+                height: auto;
+            }
+
+        }
+
+        .navbar-collapse {
+            justify-content: center;
+        }
+
+        .navbar-nav {
+
+            .nav-item {
+                font-size: .55555rem;
+                color: $Manatee;
+    
+            .nav-link {
+                padding: 0 16px;
+            }
+
+            @media screen and(max-width: 991px) {
+            text-align: center;
+            }
+
+        }
+    
+        
+        }
+
+    }   
+
+}

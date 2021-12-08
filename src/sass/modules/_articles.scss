@@ -1,0 +1,43 @@
+.article {
+    background-color: #FAFAFA;
+
+    .row-article {
+        padding-bottom: 78px;
+    }
+
+    &__title {
+        margin: 97px 0 53px;
+    }
+
+    &__block {
+        background-color: $White;
+        border-radius: 5px;
+
+        &__img {
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            width: 100%;
+        }
+
+        &__label, h4, p {
+            padding: 0 24px;
+        }
+
+        &__label {
+            margin: 25px 0 0;
+            font-size: 8px;
+        }
+
+        h4 {
+            margin: 29px 0;
+        }
+
+        p {
+            padding-bottom: 27px;
+        }
+
+        @media screen and(max-width: 991px) {
+            margin-bottom: 22px;
+        }
+    }
+}
