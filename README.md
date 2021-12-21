@@ -64,7 +64,7 @@ Your users should be able to:
 
 ### What I learned
 
-I learned nothing, just an exercise :).
+I learned from the behavior of the background-images.
 
 
 ### Useful resources
